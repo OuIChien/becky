@@ -18,8 +18,8 @@ public class Account extends AbstractPersistable<Long> {
     /**
      * 手机号码(作为登录帐号)
      */
-    @Column(unique = true, length = 11) String mobile;
+    @Column(unique = true, length = 11) public String mobile;
 
-    @Column(length = 100) String password;
+    @Column(length = 100) public String password;
 
 }

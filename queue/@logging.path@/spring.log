@@ -1,0 +1,27 @@
+2017-07-30 22:19:41.856  INFO 9520 --- [restartedMain] com.eeducational.queue.Application       : Starting Application on Gary-Win10 with PID 9520 (C:\Users\ouich\workspace\bekcy\queue\target\classes started by gary in C:\Users\ouich\workspace\bekcy\queue)
+2017-07-30 22:19:41.858  INFO 9520 --- [restartedMain] com.eeducational.queue.Application       : No active profile set, falling back to default profiles: default
+2017-07-30 22:19:41.927  INFO 9520 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@586a55c4: startup date [Sun Jul 30 22:19:41 CST 2017]; root of context hierarchy
+2017-07-30 22:19:43.572  INFO 9520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$25bd12a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-30 22:19:43.948 ERROR 9520 --- [restartedMain] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-07-30 22:19:43.949 ERROR 9520 --- [restartedMain] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'server' on field 'port': rejected value [@server.port@]; codes [typeMismatch.server.port,typeMismatch.port,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [server.port,port]; arguments []; default message [port]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'port'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.lang.Integer]]
+2017-07-30 22:19:43.952  WARN 9520 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverProperties': Could not bind properties to ServerProperties (prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'server' on field 'port': rejected value [@server.port@]; codes [typeMismatch.server.port,typeMismatch.port,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [server.port,port]; arguments []; default message [port]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'port'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.lang.Integer]]
+2017-07-30 22:19:43.959 ERROR 9520 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.web.ServerProperties@610a341 failed:
+
+    Property: server.port
+    Value: @server.port@
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'port'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.lang.Integer]
+
+
+Action:
+
+Update your application's configuration
+
